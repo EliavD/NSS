@@ -1,1 +1,99 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header nav {
+  margin-top: 0.5em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e2e8f0;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+
+/* About, Problem, Products Sections */
+section {
+  background-color: #fff;
+  margin: 2em 0;
+  padding: 2em 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
 
