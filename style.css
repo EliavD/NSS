@@ -580,3 +580,228 @@ body {
     letter-spacing: 2px;
   }
 }
+
+/* Product Page Styles */
+.product-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #F5F5DC 0%, #FFFACD 100%);
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.product-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 15px 40px rgba(139, 38, 53, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.8);
+  border: 4px solid #DC143C;
+}
+
+.product-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(139, 38, 53, 0.05) 10px,
+      rgba(139, 38, 53, 0.05) 20px
+    );
+  z-index: 1;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, #DC143C 0%, #B22222 50%, #8B2635 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5DC;
+  font-size: 64px;
+  font-weight: 900;
+  text-shadow: 3px 3px 0 #8B2635;
+  position: relative;
+  z-index: 2;
+}
+
+.product-info {
+  padding: 20px 0;
+}
+
+.product-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #8B2635;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Cooper Black', serif;
+  text-shadow: 3px 3px 0 #DC143C;
+  animation: groovyBounce 2s ease-out;
+}
+
+.product-price {
+  font-size: 36px;
+  font-weight: 900;
+  color: #DC143C;
+  margin-bottom: 30px;
+  font-family: 'Cooper Black', serif;
+  text-shadow: 2px 2px 0 rgba(139, 38, 53, 0.3);
+}
+
+.product-description {
+  font-size: 18px;
+  color: #8B2635;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(135deg, rgba(245, 245, 220, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(139, 38, 53, 0.2);
+}
+
+.product-features {
+  margin-bottom: 40px;
+}
+
+.features-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #8B2635;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Cooper Black', serif;
+  text-shadow: 1px 1px 0 rgba(220, 20, 60, 0.3);
+}
+
+.features-list {
+  display: grid;
+  gap: 12px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #8B2635;
+  font-family: 'Times New Roman', serif;
+}
+
+.feature-item .feature-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(45deg, #DC143C, #B22222);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5DC;
+  font-weight: 900;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(139, 38, 53, 0.3);
+  margin: 0;
+}
+
+.purchase-section {
+  background: linear-gradient(135deg, rgba(245, 245, 220, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid #DC143C;
+  box-shadow: 0 10px 30px rgba(139, 38, 53, 0.2);
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.quantity-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8B2635;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Cooper Black', serif;
+}
+
+.quantity-input {
+  width: 80px;
+  height: 50px;
+  border: 3px solid #DC143C;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #8B2635;
+  background: #F5F5DC;
+  font-family: 'Cooper Black', serif;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  background: linear-gradient(45deg, #DC143C 0%, #B22222 100%);
+  color: #F5F5DC;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 20px rgba(220, 20, 60, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  border: 3px solid #8B2635;
+  font-family: 'Cooper Black', serif;
+  text-shadow: 2px 2px 0 #8B2635;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-to-cart:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 12px 30px rgba(220, 20, 60, 0.6),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.buy-now {
+  display: block;
+  width: 100%;
+  background: linear-gradient(45deg, #8B2635 0%, #A0522D 100%);
+  color: #F5F5DC;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 20px rgba(139, 38, 53, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  border: 3px solid #DC143C;
+  font-family: 'Cooper Black', serif;
+  text-shadow: 2px 2px 0 #DC143C;
+  text-align: center
