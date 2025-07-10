@@ -805,3 +805,59 @@ body {
   font-family: 'Cooper Black', serif;
   text-shadow: 2px 2px 0 #DC143C;
   text-align: center
+  text-align: center;
+}
+
+/* Responsive Product Page Adjustments */
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product-image {
+    height: auto;
+  }
+
+  .placeholder-image {
+    height: 300px;
+    font-size: 48px;
+  }
+
+  .product-title {
+    font-size: 36px;
+  }
+
+  .product-price {
+    font-size: 28px;
+  }
+
+  .product-description {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .features-title {
+    font-size: 20px;
+  }
+
+  .feature-item {
+    font-size: 14px;
+  }
+
+  .purchase-section {
+    padding: 30px;
+  }
+
+  .quantity-input {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .add-to-cart,
+  .buy-now {
+    font-size: 18px;
+    padding: 16px;
+  }
+}
