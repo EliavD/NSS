@@ -1,97 +1,63 @@
-/* Press Page Styles */
-.press-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #F5F5DC 0%, #FFFACD 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press | No Soliciting Solicitors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-.press-container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, rgba(245, 245, 220, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
-  padding: 40px;
-  border-radius: 20px;
-  border: 3px solid #DC143C;
-  box-shadow: 0 10px 30px rgba(139, 38, 53, 0.2);
-}
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">No Soliciting Solicitors</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="press.html">Press</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-.press-title {
-  font-size: 48px;
-  font-weight: 900;
-  color: #8B2635;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
-  text-shadow: 3px 3px 0 #DC143C;
-}
+  <!-- Press Section -->
+  <section class="press-section">
+    <div class="container press-container">
+      <h1 class="press-title">Press Inquiries</h1>
+      <p class="press-description">
+        Reach out to us directly with questions, collaborations, or press requests. We’re proud to share our Ohio-made products with the world.
+      </p>
+      <form class="press-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-.press-description {
-  font-size: 18px;
-  color: #8B2635;
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: 'Times New Roman', serif;
-  line-height: 1.6;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>About</h4>
+        <p>Handcrafted No Soliciting signs made in Ohio to keep your space peaceful and interruption-free.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="products.html">Products</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="press.html">Press</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 No Soliciting Solicitors. All rights reserved.
+    </div>
+  </footer>
 
-.press-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.press-form input,
-.press-form textarea {
-  padding: 16px;
-  border: 3px solid #DC143C;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Times New Roman', serif;
-  color: #8B2635;
-  background: #F5F5DC;
-  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-.press-form textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.press-form button {
-  background: linear-gradient(45deg, #DC143C 0%, #B22222 100%);
-  color: #F5F5DC;
-  padding: 16px;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 2px;
-  border-radius: 25px;
-  border: 3px solid #8B2635;
-  cursor: pointer;
-  font-family: 'Cooper Black', serif;
-  transition: all 0.3s ease;
-  text-shadow: 2px 2px 0 #8B2635;
-  box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-.press-form button:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-/* Responsive Press Page */
-@media (max-width: 768px) {
-  .press-container {
-    padding: 30px;
-  }
-
-  .press-title {
-    font-size: 36px;
-  }
-
-  .press-description {
-    font-size: 16px;
-  }
-}
+</body>
+</html>
 
