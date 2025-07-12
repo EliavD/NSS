@@ -31,13 +31,17 @@ body {
   box-shadow: 0 4px 15px rgba(139, 38, 53, 0.3);
 }
 
-/* UPDATED POSITIONING FOR SPLIT-NAV */
 .nav-bar {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 20px 0;
-  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .logo {
@@ -49,26 +53,13 @@ body {
   text-transform: uppercase;
   text-shadow: 3px 3px 0 #8B2635;
   font-family: 'Cooper Black', serif;
-  /* Curved text effect */
-  transform: perspective(500px) rotateX(15deg);
-  display: inline-block;
   background: linear-gradient(45deg, #F5F5DC 0%, #FFFACD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   filter: drop-shadow(3px 3px 0 #8B2635);
-}
-
-/* UPDATED POSITIONING FOR SPLIT-NAV */
-.nav-links {
-  display: flex;
-  gap: 40px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  justify-content: space-between;
-  padding: 0 24px;
-  pointer-events: none;
+  transform: perspective(500px) rotateX(15deg);
+  white-space: nowrap;
 }
 
 .nav-links a {
@@ -82,7 +73,6 @@ body {
   position: relative;
   font-family: 'Cooper Black', serif;
   text-shadow: 2px 2px 0 #8B2635;
-  pointer-events: auto;
 }
 
 .nav-links a:hover {
@@ -94,6 +84,16 @@ body {
   content: '';
   position: absolute;
   bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FFB6C1;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
 
 /* Hero Section */
 .hero {
