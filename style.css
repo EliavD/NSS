@@ -1166,3 +1166,303 @@ body {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3);
 }
+/* Care and Installation Page Styles */
+.care-container {
+  background: linear-gradient(135deg, #F5F5DC 0%, #E6E6C7 100%);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 32px rgba(139, 69, 19, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 3px solid #DC143C;
+  font-family: 'Times New Roman', serif;
+}
+
+.care-title {
+  font-size: 42px;
+  font-weight: 900;
+  text-align: center;
+  color: #8B2635;
+  text-shadow: 
+    2px 2px 0 #cd853f,
+    4px 4px 0 #a0522d,
+    6px 6px 20px rgba(139, 69, 19, 0.5);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Cooper Black', serif;
+}
+
+.care-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #8B2635;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #8B2635;
+  text-shadow: 
+    2px 2px 0 #cd853f,
+    3px 3px 0 #a0522d,
+    5px 5px 15px rgba(139, 69, 19, 0.4);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Cooper Black', serif;
+}
+
+.installation-video {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.video-placeholder {
+  background: linear-gradient(135deg, #DC143C 0%, #B22222 100%);
+  border-radius: 15px;
+  padding: 60px 40px;
+  border: 3px solid #8B2635;
+  box-shadow: 
+    0 8px 20px rgba(220, 20, 60, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-icon {
+  font-size: 48px;
+  color: #F5F5DC;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 0 #8B2635;
+}
+
+.video-placeholder p {
+  font-size: 22px;
+  color: #F5F5DC;
+  font-weight: 900;
+  text-shadow: 2px 2px 0 #8B2635;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.coming-soon {
+  background: rgba(255, 255, 255, 0.2);
+  color: #F5F5DC;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.installation-guide,
+.care-guide {
+  margin-bottom: 40px;
+}
+
+.instruction-step,
+.care-tip {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #DC143C;
+  box-shadow: 
+    0 4px 15px rgba(220, 20, 60, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.instruction-step h3,
+.care-tip h3 {
+  font-size: 20px;
+  color: #8B2635;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #cd853f;
+}
+
+.instruction-step p,
+.care-tip p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8B2635;
+  margin: 0;
+}
+
+.warranty-info {
+  background: rgba(220, 20, 60, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #DC143C;
+  margin-bottom: 40px;
+  box-shadow: 
+    0 4px 15px rgba(220, 20, 60, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.warranty-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8B2635;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8B2635;
+  margin-bottom: 25px;
+}
+
+.contact-button {
+  background: linear-gradient(45deg, #DC143C 0%, #B22222 100%);
+  color: #F5F5DC;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  border: 3px solid #8B2635;
+  cursor: pointer;
+  font-family: 'Cooper Black', serif;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 0 #8B2635;
+  box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .care-container {
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 
+      0 6px 24px rgba(139, 69, 19, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .care-title {
+    font-size: 32px;
+    text-shadow: 
+      2px 2px 0 #cd853f,
+      4px 4px 0 #a0522d,
+      6px 6px 15px rgba(139, 69, 19, 0.4);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .care-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .video-placeholder {
+    padding: 40px 20px;
+  }
+  
+  .video-icon {
+    font-size: 36px;
+  }
+  
+  .video-placeholder p {
+    font-size: 18px;
+  }
+  
+  .instruction-step,
+  .care-tip {
+    padding: 20px;
+  }
+  
+  .warranty-info {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .care-container {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+  
+  .care-title {
+    font-size: 28px;
+    text-shadow: 
+      2px 2px 0 #cd853f,
+      3px 3px 0 #a0522d,
+      5px 5px 12px rgba(139, 69, 19, 0.4);
+    letter-spacing: 0.5px;
+  }
+  
+  .care-description {
+    font-size: 15px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+  }
+  
+  .video-placeholder {
+    padding: 30px 15px;
+  }
+  
+  .video-icon {
+    font-size: 32px;
+  }
+  
+  .video-placeholder p {
+    font-size: 16px;
+  }
+  
+  .instruction-step,
+  .care-tip {
+    padding: 15px;
+  }
+  
+  .instruction-step h3,
+  .care-tip h3 {
+    font-size: 18px;
+  }
+  
+  .instruction-step p,
+  .care-tip p {
+    font-size: 15px;
+  }
+  
+  .warranty-info {
+    padding: 20px;
+  }
+  
+  .warranty-text {
+    font-size: 15px;
+  }
+  
+  .contact-text {
+    font-size: 15px;
+  }
+  
+  .contact-button {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
