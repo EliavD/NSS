@@ -35,6 +35,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -94,6 +98,48 @@ body {
   width: 100%;
 }
 
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .nav-links {
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 13px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .nav-bar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /* Hero Section */
 .hero {
   background: linear-gradient(45deg, #F5F5DC 0%, #FFFACD 25%, #FFF8DC 50%, #FFFACD 75%, #F5F5DC 100%);
