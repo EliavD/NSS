@@ -35,10 +35,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .logo {
@@ -97,7 +93,6 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
-
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-bar {
