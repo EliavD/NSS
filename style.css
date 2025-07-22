@@ -623,6 +623,14 @@ body {
     gap: 20px;
   }
 
+  .logo {
+    font-size: 24px; /* Adjusted for smaller screens */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Adjusted for smaller screens */
+  }
+
   .hero {
     padding: 80px 0;
   }
@@ -1832,6 +1840,7 @@ img, video {
   .logo {
     order: -1; /* Move logo to top */
     margin-bottom: 0.5rem;
+    font-size: 22px; /* Adjusted for even smaller screens */
   }
   
   .nav-links {
@@ -1857,6 +1866,10 @@ img, video {
   
   .nav-links a {
     font-size: 0.85rem;
+  }
+
+  .logo {
+    font-size: 18px; /* Adjusted for very small screens */
   }
 }
 .video-wrapper {
