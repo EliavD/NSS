@@ -12,7 +12,7 @@
          url('caprasimo-regular-webfont.svg#caprasimoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap; /* Added for performance */
 }
 /* Reset */
 * {
@@ -22,11 +22,11 @@
 }
 
 body {
-  font-family: 'Cooper Black', 'Times New Roman', serif;
+  font-family: 'caprasimoregular', 'Times New Roman', serif; /* Changed font */
   line-height: 1.6;
   color: #8B2635;
   background-color: #F5F5DC;
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 80%, rgba(139, 38, 53, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(205, 92, 92, 0.1) 0%, transparent 50%);
 }
@@ -68,7 +68,7 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 3px 3px 0 #C2B280;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   background: linear-gradient(45deg, #F5F5DC 0%, #FFFACD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,7 +87,7 @@ body {
   letter-spacing: 2px;
   transition: all 0.3s ease;
   position: relative;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #8B2635;
 }
 
@@ -129,7 +129,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -158,7 +158,7 @@ body {
   line-height: 1;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 4px 4px 0 #DC143C, 8px 8px 0 rgba(139, 38, 53, 0.3);
   animation: groovyBounce 2s ease-out;
 }
@@ -187,18 +187,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: all 0.3s ease;
-  box-shadow: 
+  box-shadow:
     0 8px 20px rgba(220, 20, 60, 0.4),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
   border: 3px solid #8B2635;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #8B2635;
   animation: groovySlide 2s ease-out 1s both;
 }
 
 .cta-button:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 
+  box-shadow:
     0 12px 30px rgba(220, 20, 60, 0.6),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
 }
@@ -236,7 +236,7 @@ body {
   margin-bottom: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 3px 3px 0 #DC143C;
   position: relative;
 }
@@ -279,7 +279,7 @@ body {
   overflow: hidden;
   border-radius: 20px;
   border: 3px solid #DC143C;
-  box-shadow: 
+  box-shadow:
     0 10px 30px rgba(139, 38, 53, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.8);
   background: linear-gradient(135deg, #F5F5DC 0%, #FFFACD 100%);
@@ -288,7 +288,7 @@ body {
 
 .about-image:hover {
   transform: translateY(-5px) rotate(1deg);
-  box-shadow: 
+  box-shadow:
     0 15px 40px rgba(139, 38, 53, 0.4),
     inset 0 2px 0 rgba(255, 255, 255, 0.8);
 }
@@ -300,7 +300,7 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: 
+  background:
     repeating-conic-gradient(
       from 0deg at 50% 50%,
       transparent 0deg,
@@ -359,7 +359,7 @@ body {
   border-radius: 20px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 
+  box-shadow:
     0 10px 30px rgba(139, 38, 53, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.8);
   border: 3px solid #DC143C;
@@ -374,7 +374,7 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: 
+  background:
     repeating-conic-gradient(
       from 0deg at 50% 50%,
       transparent 0deg,
@@ -397,7 +397,7 @@ body {
 
 .feature-card:hover {
   transform: translateY(-8px) rotate(1deg);
-  box-shadow: 
+  box-shadow:
     0 15px 40px rgba(139, 38, 53, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.8);
 }
@@ -425,7 +425,7 @@ body {
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 1px 1px 0 rgba(220, 20, 60, 0.3);
   position: relative;
   z-index: 2;
@@ -455,7 +455,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     repeating-linear-gradient(
       90deg,
       transparent,
@@ -513,7 +513,7 @@ body {
   margin: 0 auto 20px;
   border: 3px solid #8B2635;
   box-shadow: 0 8px 20px rgba(139, 38, 53, 0.3);
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #F5F5DC;
 }
 
@@ -524,7 +524,7 @@ body {
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #8B2635;
 }
 
@@ -552,7 +552,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 30% 70%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 70% 30%, rgba(178, 34, 34, 0.1) 0%, transparent 50%);
 }
@@ -600,7 +600,7 @@ body {
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 1px 1px 0 rgba(220, 20, 60, 0.3);
 }
 
@@ -691,11 +691,11 @@ body {
     gap: 30px;
     text-align: center;
   }
-  
+
   .about-text .section-subtitle {
     text-align: center;
   }
-  
+
   .about-image {
     max-width: 400px;
     margin: 0 auto;
@@ -719,7 +719,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 
+  box-shadow:
     0 15px 40px rgba(139, 38, 53, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.8);
   border: 4px solid #DC143C;
@@ -732,7 +732,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -769,7 +769,7 @@ body {
   margin-bottom: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 3px 3px 0 #DC143C;
   animation: groovyBounce 2s ease-out;
 }
@@ -779,7 +779,7 @@ body {
   font-weight: 900;
   color: #DC143C;
   margin-bottom: 30px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 rgba(139, 38, 53, 0.3);
 }
 
@@ -806,7 +806,7 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 1px 1px 0 rgba(220, 20, 60, 0.3);
 }
 
@@ -860,7 +860,7 @@ body {
   color: #8B2635;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
 }
 
 .quantity-input {
@@ -873,7 +873,7 @@ body {
   font-weight: 700;
   color: #8B2635;
   background: #F5F5DC;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
 }
 
 .add-to-cart {
@@ -889,11 +889,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: all 0.3s ease;
-  box-shadow: 
+  box-shadow:
     0 8px 20px rgba(220, 20, 60, 0.4),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
   border: 3px solid #8B2635;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #8B2635;
   text-align: center;
   margin-bottom: 20px;
@@ -901,7 +901,7 @@ body {
 
 .add-to-cart:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 12px 30px rgba(220, 20, 60, 0.6),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
 }
@@ -919,11 +919,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: all 0.3s ease;
-  box-shadow: 
+  box-shadow:
     0 8px 20px rgba(139, 38, 53, 0.4),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
   border: 3px solid #DC143C;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 2px 2px 0 #DC143C;
   text-align: center
   text-align: center;
@@ -1006,7 +1006,7 @@ body {
   margin-bottom: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 3px 3px 0 #DC143C;
 }
 
@@ -1053,7 +1053,7 @@ body {
   border-radius: 25px;
   border: 3px solid #8B2635;
   cursor: pointer;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   transition: all 0.3s ease;
   text-shadow: 2px 2px 0 #8B2635;
   box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
@@ -1088,7 +1088,7 @@ body {
   margin-bottom: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   text-shadow: 3px 3px 0 #DC143C;
 }
 
@@ -1106,21 +1106,21 @@ body {
   .press-container {
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 
+    box-shadow:
       0 6px 24px rgba(139, 69, 19, 0.25),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
-  
+
   .press-title {
     font-size: 32px;
-    text-shadow: 
+    text-shadow:
       2px 2px 0 #cd853f,
       4px 4px 0 #a0522d,
       6px 6px 15px rgba(139, 69, 19, 0.4);
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
-  
+
   .press-description {
     font-size: 16px;
     line-height: 1.5;
@@ -1132,16 +1132,16 @@ body {
     padding: 30px 20px;
     border-radius: 12px;
   }
-  
+
   .press-title {
     font-size: 28px;
-    text-shadow: 
+    text-shadow:
       2px 2px 0 #cd853f,
       3px 3px 0 #a0522d,
       5px 5px 12px rgba(139, 69, 19, 0.4);
     letter-spacing: 0.5px;
   }
-  
+
   .press-description {
     font-size: 15px;
   }
@@ -1181,7 +1181,7 @@ body {
   border-radius: 25px;
   border: 3px solid #8B2635;
   cursor: pointer;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   transition: all 0.3s ease;
   text-shadow: 2px 2px 0 #8B2635;
   box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
@@ -1198,7 +1198,7 @@ body {
   margin: 40px auto;
   padding: 50px 40px;
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(139, 69, 19, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border: 3px solid #DC143C;
@@ -1210,14 +1210,14 @@ body {
   font-weight: 900;
   text-align: center;
   color: #8B2635;
-  text-shadow: 
+  text-shadow:
     2px 2px 0 #cd853f,
     4px 4px 0 #a0522d,
     6px 6px 20px rgba(139, 69, 19, 0.5);
   letter-spacing: 2px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
 }
 
 .care-description {
@@ -1233,14 +1233,14 @@ body {
   font-size: 28px;
   font-weight: 900;
   color: #8B2635;
-  text-shadow: 
+  text-shadow:
     2px 2px 0 #cd853f,
     3px 3px 0 #a0522d,
     5px 5px 15px rgba(139, 69, 19, 0.4);
   letter-spacing: 1px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
 }
 
 .installation-video {
@@ -1253,7 +1253,7 @@ body {
   border-radius: 15px;
   padding: 60px 40px;
   border: 3px solid #8B2635;
-  box-shadow: 
+  box-shadow:
     0 8px 20px rgba(220, 20, 60, 0.4),
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
   position: relative;
@@ -1299,7 +1299,7 @@ body {
   border-radius: 15px;
   margin-bottom: 20px;
   border: 2px solid #DC143C;
-  box-shadow: 
+  box-shadow:
     0 4px 15px rgba(220, 20, 60, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
@@ -1327,7 +1327,7 @@ body {
   border-radius: 15px;
   border: 2px solid #DC143C;
   margin-bottom: 40px;
-  box-shadow: 
+  box-shadow:
     0 4px 15px rgba(220, 20, 60, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
@@ -1362,7 +1362,7 @@ body {
   border-radius: 25px;
   border: 3px solid #8B2635;
   cursor: pointer;
-  font-family: 'Cooper Black', serif;
+  font-family: 'caprasimoregular', serif; /* Changed font */
   transition: all 0.3s ease;
   text-shadow: 2px 2px 0 #8B2635;
   box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
@@ -1378,47 +1378,47 @@ body {
   .care-container {
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 
+    box-shadow:
       0 6px 24px rgba(139, 69, 19, 0.25),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
-  
+
   .care-title {
     font-size: 32px;
-    text-shadow: 
+    text-shadow:
       2px 2px 0 #cd853f,
       4px 4px 0 #a0522d,
       6px 6px 15px rgba(139, 69, 19, 0.4);
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
-  
+
   .care-description {
     font-size: 16px;
     line-height: 1.5;
   }
-  
+
   .section-title {
     font-size: 24px;
   }
-  
+
   .video-placeholder {
     padding: 40px 20px;
   }
-  
+
   .video-icon {
     font-size: 36px;
   }
-  
+
   .video-placeholder p {
     font-size: 18px;
   }
-  
+
   .instruction-step,
   .care-tip {
     padding: 20px;
   }
-  
+
   .warranty-info {
     padding: 25px;
   }
@@ -1429,363 +1429,63 @@ body {
     padding: 30px 20px;
     border-radius: 12px;
   }
-  
+
   .care-title {
     font-size: 28px;
-    text-shadow: 
+    text-shadow:
       2px 2px 0 #cd853f,
       3px 3px 0 #a0522d,
       5px 5px 12px rgba(139, 69, 19, 0.4);
     letter-spacing: 0.5px;
   }
-  
+
   .care-description {
     font-size: 15px;
   }
-  
+
   .section-title {
     font-size: 22px;
   }
-  
+
   .video-placeholder {
     padding: 30px 15px;
   }
-  
+
   .video-icon {
     font-size: 32px;
   }
-  
+
   .video-placeholder p {
     font-size: 16px;
   }
-  
+
   .instruction-step,
   .care-tip {
     padding: 15px;
   }
-  
+
   .instruction-step h3,
   .care-tip h3 {
     font-size: 18px;
   }
-  
+
   .instruction-step p,
   .care-tip p {
     font-size: 15px;
   }
-  
+
   .warranty-info {
     padding: 20px;
   }
-  
+
   .warranty-text {
     font-size: 15px;
   }
-  
+
   .contact-text {
     font-size: 15px;
   }
-  
-  .contact-button {
-    padding: 14px 28px;
-    font-size: 16px;
-  }
-}
-/* Care and Installation Page Styles */
-.care-container {
-  background: linear-gradient(135deg, #F5F5DC 0%, #E6E6C7 100%);
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 50px 40px;
-  border-radius: 20px;
-  box-shadow: 
-    0 8px 32px rgba(139, 69, 19, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border: 3px solid #DC143C;
-  font-family: 'Times New Roman', serif;
-}
 
-.care-title {
-  font-size: 42px;
-  font-weight: 900;
-  text-align: center;
-  color: #8B2635;
-  text-shadow: 
-    2px 2px 0 #cd853f,
-    4px 4px 0 #a0522d,
-    6px 6px 20px rgba(139, 69, 19, 0.5);
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
-}
-
-.care-description {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #8B2635;
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 500;
-}
-
-.section-title {
-  font-size: 28px;
-  font-weight: 900;
-  color: #8B2635;
-  text-shadow: 
-    2px 2px 0 #cd853f,
-    3px 3px 0 #a0522d,
-    5px 5px 15px rgba(139, 69, 19, 0.4);
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: 'Cooper Black', serif;
-}
-
-.installation-video {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.video-placeholder {
-  background: linear-gradient(135deg, #DC143C 0%, #B22222 100%);
-  border-radius: 15px;
-  padding: 60px 40px;
-  border: 3px solid #8B2635;
-  box-shadow: 
-    0 8px 20px rgba(220, 20, 60, 0.4),
-    inset 0 2px 0 rgba(255, 255, 255, 0.3);
-  position: relative;
-  overflow: hidden;
-}
-
-.video-icon {
-  font-size: 48px;
-  color: #F5F5DC;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 0 #8B2635;
-}
-
-.video-placeholder p {
-  font-size: 22px;
-  color: #F5F5DC;
-  font-weight: 900;
-  text-shadow: 2px 2px 0 #8B2635;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.coming-soon {
-  background: rgba(255, 255, 255, 0.2);
-  color: #F5F5DC;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.installation-guide,
-.care-guide {
-  margin-bottom: 40px;
-}
-
-.instruction-step,
-.care-tip {
-  background: rgba(255, 255, 255, 0.3);
-  padding: 25px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  border: 2px solid #DC143C;
-  box-shadow: 
-    0 4px 15px rgba(220, 20, 60, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-.instruction-step h3,
-.care-tip h3 {
-  font-size: 20px;
-  color: #8B2635;
-  margin-bottom: 12px;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 #cd853f;
-}
-
-.instruction-step p,
-.care-tip p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #8B2635;
-  margin: 0;
-}
-
-.warranty-info {
-  background: rgba(220, 20, 60, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  border: 2px solid #DC143C;
-  margin-bottom: 40px;
-  box-shadow: 
-    0 4px 15px rgba(220, 20, 60, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-.warranty-text {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #8B2635;
-  margin: 0;
-  text-align: center;
-}
-
-.contact-section {
-  text-align: center;
-}
-
-.contact-text {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #8B2635;
-  margin-bottom: 25px;
-}
-
-.contact-button {
-  background: linear-gradient(45deg, #DC143C 0%, #B22222 100%);
-  color: #F5F5DC;
-  padding: 16px 32px;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 2px;
-  border-radius: 25px;
-  border: 3px solid #8B2635;
-  cursor: pointer;
-  font-family: 'Cooper Black', serif;
-  transition: all 0.3s ease;
-  text-shadow: 2px 2px 0 #8B2635;
-  box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-.contact-button:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .care-container {
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 
-      0 6px 24px rgba(139, 69, 19, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  
-  .care-title {
-    font-size: 32px;
-    text-shadow: 
-      2px 2px 0 #cd853f,
-      4px 4px 0 #a0522d,
-      6px 6px 15px rgba(139, 69, 19, 0.4);
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-  }
-  
-  .care-description {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .section-title {
-    font-size: 24px;
-  }
-  
-  .video-placeholder {
-    padding: 40px 20px;
-  }
-  
-  .video-icon {
-    font-size: 36px;
-  }
-  
-  .video-placeholder p {
-    font-size: 18px;
-  }
-  
-  .instruction-step,
-  .care-tip {
-    padding: 20px;
-  }
-  
-  .warranty-info {
-    padding: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .care-container {
-    padding: 30px 20px;
-    border-radius: 12px;
-  }
-  
-  .care-title {
-    font-size: 28px;
-    text-shadow: 
-      2px 2px 0 #cd853f,
-      3px 3px 0 #a0522d,
-      5px 5px 12px rgba(139, 69, 19, 0.4);
-    letter-spacing: 0.5px;
-  }
-  
-  .care-description {
-    font-size: 15px;
-  }
-  
-  .section-title {
-    font-size: 22px;
-  }
-  
-  .video-placeholder {
-    padding: 30px 15px;
-  }
-  
-  .video-icon {
-    font-size: 32px;
-  }
-  
-  .video-placeholder p {
-    font-size: 16px;
-  }
-  
-  .instruction-step,
-  .care-tip {
-    padding: 15px;
-  }
-  
-  .instruction-step h3,
-  .care-tip h3 {
-    font-size: 18px;
-  }
-  
-  .instruction-step p,
-  .care-tip p {
-    font-size: 15px;
-  }
-  
-  .warranty-info {
-    padding: 20px;
-  }
-  
-  .warranty-text {
-    font-size: 15px;
-  }
-  
-  .contact-text {
-    font-size: 15px;
-  }
-  
   .contact-button {
     padding: 14px 28px;
     font-size: 16px;
@@ -1852,19 +1552,19 @@ img, video {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .logo {
     order: -1; /* Move logo to top */
     margin-bottom: 0.5rem;
     font-size: 22px; /* Adjusted for even smaller screens */
   }
-  
+
   .nav-links {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .nav-links a {
     font-size: 0.9rem;
   }
@@ -1875,11 +1575,11 @@ img, video {
   .site-header .container {
     padding: 0 0.5rem;
   }
-  
+
   .nav-links {
     gap: 0.75rem;
   }
-  
+
   .nav-links a {
     font-size: 0.85rem;
   }
